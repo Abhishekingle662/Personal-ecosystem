@@ -1,0 +1,72 @@
+@import 'geist/font/sans';
+@import 'geist/font/mono';
+@import 'tailwindcss';
+
+:root {
+  /* Background */
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #242424;
+
+  /* Text */
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #606060;
+
+  /* Border */
+  --border: #2a2a2a;
+  --border-hover: #3a3a3a;
+
+  /* Accent */
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-muted: #6366f120;
+
+  /* Success */
+  --success: #22c55e;
+  --success-muted: #22c55e20;
+
+  /* Warning */
+  --warning: #f59e0b;
+  --warning-muted: #f59e0b20;
+
+  /* Destructive */
+  --destructive: #ef4444;
+  --destructive-muted: #ef444420;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  font-family: 'Geist Sans', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
